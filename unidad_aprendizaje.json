@@ -1,0 +1,95 @@
+{
+    "unidad": {
+      "id": 1,
+      "nombre": "Sistemas Distribuidos",
+      "descripcion": "Unidad de aprendizaje enfocada en los conceptos básicos y avanzados de sistemas distribuidos."
+    },
+    "modulos": [
+      {
+        "id": 1,
+        "nombre": "Introducción a la Nube",
+        "descripcion": "Este módulo aborda los conceptos fundamentales de la computación en la nube.",
+        "temas": [
+          {
+            "id": 1,
+            "nombre": "Historia del cómputo en la nube",
+            "descripcion": "Un recorrido histórico sobre los orígenes de la computación en la nube.",
+            "materiales": [
+              {
+                "id": 1,
+                "nombre": "Introducción a la nube",
+                "descripcion": "Un documento introductorio sobre la historia de la computación en la nube.",
+                "tipo": "PDF",
+                "dificultad": "Bajo",
+                "evaluacion": 0.8
+              },
+              {
+                "id": 2,
+                "nombre": "Historia visual de la nube",
+                "descripcion": "Un video explicativo que aborda los hitos principales de la computación en la nube.",
+                "tipo": "Video",
+                "dificultad": "Medio",
+                "evaluacion": 0.9
+              },
+              {
+                "id": 3,
+                "nombre": "Historia en detalle",
+                "descripcion": "Texto con un análisis histórico más profundo sobre la nube.",
+                "tipo": "Texto",
+                "dificultad": "Medio",
+                "evaluacion": 0.7
+              },
+              {
+                "id": 4,
+                "nombre": "Práctica: Evolución de la nube",
+                "descripcion": "Ejercicio práctico para entender la evolución de los servicios en la nube.",
+                "tipo": "Práctico",
+                "dificultad": "Alto",
+                "evaluacion": 0.6
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "nombre": "Características esenciales de una nube",
+            "descripcion": "Estudio de las características fundamentales que definen una nube.",
+            "materiales": [
+              {
+                "id": 5,
+                "nombre": "Características en detalle",
+                "descripcion": "PDF que explica las características fundamentales de la nube.",
+                "tipo": "PDF",
+                "dificultad": "Medio",
+                "evaluacion": 0.8
+              },
+              {
+                "id": 6,
+                "nombre": "Video: Características esenciales",
+                "descripcion": "Video explicativo sobre las características fundamentales de la nube.",
+                "tipo": "Video",
+                "dificultad": "Medio",
+                "evaluacion": 0.9
+              },
+              {
+                "id": 7,
+                "nombre": "Resumen en texto",
+                "descripcion": "Texto con un resumen de las características esenciales.",
+                "tipo": "Texto",
+                "dificultad": "Bajo",
+                "evaluacion": 0.6
+              },
+              {
+                "id": 8,
+                "nombre": "Ejercicio: Análisis de características",
+                "descripcion": "Práctica para analizar las características esenciales de una nube.",
+                "tipo": "Práctico",
+                "dificultad": "Alto",
+                "evaluacion": 0.7
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
