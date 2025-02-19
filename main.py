@@ -14,7 +14,7 @@ longitud_individuo = sum(len(tema['recursos']) for modulo in datos_materiales['u
 # Configuraciones ya estandarizadas del algoritmo genético
 tasa_mutacion = 0.01  # Tasa de mutación de 0.01
 tasa_de_cruza = 0.8  # Tasa de cruza de 0.8
-tamano_poblacion = 200
+tamano_poblacion = 100
 longitud_individuo = 15  # Longitud del cromosoma (asignación de materiales)
 generaciones = 100  # Número máximo de generaciones
 tam_torneo= 0.5
