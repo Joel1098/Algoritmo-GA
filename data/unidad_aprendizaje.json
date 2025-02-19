@@ -1,0 +1,261 @@
+{
+    "unidad_aprendizaje": {
+      "id": 1,
+      "nombre": "Unidad de Aprendizaje: Metodologías de Ingeniería de Software",
+      "descripcion": "Exploración de las principales metodologías utilizadas en la ingeniería de software para el desarrollo eficiente de proyectos.",
+      "modulos": [
+        {
+          "id": 1,
+          "nombre": "Módulo 1: Fundamentos de Ingeniería de Software",
+          "descripcion": "Bases y conceptos fundamentales en ingeniería de software.",
+          "temas": [
+            {
+              "id": 1,
+              "nombre": "Introducción a las metodologías de software",
+              "descripcion": "Descripción general de metodologías de desarrollo como cascada, ágil, y espiral.",
+              "recursos": [
+                {
+                  "id": 1,
+                  "tipo": "video",
+                  "nombre": "Historia de las metodologías",
+                  "url": "https://example.com/historia_metodologias",
+                  "descripcion": "Un video que cubre el origen y evolución de las metodologías de software.",
+                  "tipos_aprendizaje": {
+                    "visual": 50,
+                    "auditivo": 30,
+                    "lectura_escritura": 10,
+                    "kinestesico": 10
+                  },
+                  "dificultad": 1
+                },
+                {
+                  "id": 2,
+                  "tipo": "documento",
+                  "nombre": "Comparativa de metodologías",
+                  "url": "https://example.com/comparativa_metodologias",
+                  "descripcion": "Un documento PDF que compara las principales metodologías.",
+                  "tipos_aprendizaje": {
+                    "visual": 20,
+                    "auditivo": 10,
+                    "lectura_escritura": 60,
+                    "kinestesico": 10
+                  },
+                  "dificultad": 2
+                },
+                {
+                  "id": 3,
+                  "tipo": "artículo",
+                  "nombre": "Tendencias actuales",
+                  "url": "https://example.com/tendencias_metodologias",
+                  "descripcion": "Artículo sobre tendencias modernas en el desarrollo ágil.",
+                  "tipos_aprendizaje": {
+                    "visual": 30,
+                    "auditivo": 20,
+                    "lectura_escritura": 40,
+                    "kinestesico": 10
+                  },
+                  "dificultad": 1
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "nombre": "Metodología Cascada",
+              "descripcion": "Análisis detallado de la metodología en cascada y sus aplicaciones.",
+              "recursos": [
+                {
+                  "id": 4,
+                  "tipo": "video",
+                  "nombre": "Proceso en cascada",
+                  "url": "https://example.com/proceso_cascada",
+                  "descripcion": "Video explicativo sobre cómo funciona la metodología en cascada.",
+                  "tipos_aprendizaje": {
+                    "visual": 60,
+                    "auditivo": 20,
+                    "lectura_escritura": 10,
+                    "kinestesico": 10
+                  },
+                  "dificultad": 1
+                },
+                {
+                  "id": 5,
+                  "tipo": "documento",
+                  "nombre": "Ventajas y desventajas",
+                  "url": "https://example.com/ventajas_cascada",
+                  "descripcion": "Documento que analiza los pros y contras de esta metodología.",
+                  "tipos_aprendizaje": {
+                    "visual": 30,
+                    "auditivo": 10,
+                    "lectura_escritura": 50,
+                    "kinestesico": 10
+                  },
+                  "dificultad": 2
+                },
+                {
+                  "id": 6,
+                  "tipo": "artículo",
+                  "nombre": "Proyectos reales en cascada",
+                  "url": "https://example.com/proyectos_cascada",
+                  "descripcion": "Artículo que describe proyectos exitosos desarrollados en cascada.",
+                  "tipos_aprendizaje": {
+                    "visual": 40,
+                    "auditivo": 10,
+                    "lectura_escritura": 40,
+                    "kinestesico": 10
+                  },
+                  "dificultad": 2
+                }
+              ]
+            },
+            {
+              "id": 3,
+              "nombre": "Metodologías Ágiles",
+              "descripcion": "Exploración de Scrum, Kanban y otras metodologías ágiles.",
+              "recursos": [
+                {
+                  "id": 7,
+                  "tipo": "video",
+                  "nombre": "Introducción a Scrum",
+                  "url": "https://example.com/scrum_basico",
+                  "descripcion": "Video explicativo sobre los principios de Scrum.",
+                  "tipos_aprendizaje": {
+                    "visual": 50,
+                    "auditivo": 30,
+                    "lectura_escritura": 10,
+                    "kinestesico": 10
+                  },
+                  "dificultad": 1
+                },
+                {
+                  "id": 8,
+                  "tipo": "documento",
+                  "nombre": "Guía de Kanban",
+                  "url": "https://example.com/guia_kanban",
+                  "descripcion": "Documento que detalla los elementos clave de Kanban.",
+                  "tipos_aprendizaje": {
+                    "visual": 25,
+                    "auditivo": 15,
+                    "lectura_escritura": 50,
+                    "kinestesico": 10
+                  },
+                  "dificultad": 2
+                },
+                {
+                  "id": 9,
+                  "tipo": "artículo",
+                  "nombre": "Casos de éxito con ágil",
+                  "url": "https://example.com/casos_exito_agil",
+                  "descripcion": "Artículo que detalla proyectos exitosos implementando metodologías ágiles.",
+                  "tipos_aprendizaje": {
+                    "visual": 40,
+                    "auditivo": 20,
+                    "lectura_escritura": 30,
+                    "kinestesico": 10
+                  },
+                  "dificultad": 2
+                }
+              ]
+            },
+            {
+              "id": 4,
+              "nombre": "Metodología Espiral",
+              "descripcion": "Estudio de la metodología espiral y su enfoque iterativo.",
+              "recursos": [
+                {
+                  "id": 10,
+                  "tipo": "video",
+                  "nombre": "Iteraciones en espiral",
+                  "url": "https://example.com/iteraciones_espiral",
+                  "descripcion": "Video explicativo sobre las iteraciones en la metodología espiral.",
+                  "tipos_aprendizaje": {
+                    "visual": 40,
+                    "auditivo": 30,
+                    "lectura_escritura": 20,
+                    "kinestesico": 10
+                  },
+                  "dificultad": 1
+                },
+                {
+                  "id": 11,
+                  "tipo": "documento",
+                  "nombre": "Guía de la metodología espiral",
+                  "url": "https://example.com/guia_espiral",
+                  "descripcion": "Documento que explica cada etapa de la metodología espiral.",
+                  "tipos_aprendizaje": {
+                    "visual": 30,
+                    "auditivo": 20,
+                    "lectura_escritura": 40,
+                    "kinestesico": 10
+                  },
+                  "dificultad": 2
+                },
+                {
+                  "id": 12,
+                  "tipo": "artículo",
+                  "nombre": "Análisis de riesgos en espiral",
+                  "url": "https://example.com/riesgos_espiral",
+                  "descripcion": "Artículo que explica cómo manejar riesgos en la metodología espiral.",
+                  "tipos_aprendizaje": {
+                    "visual": 35,
+                    "auditivo": 20,
+                    "lectura_escritura": 35,
+                    "kinestesico": 10
+                  },
+                  "dificultad": 3
+                }
+              ]
+            },
+            {
+              "id": 5,
+              "nombre": "Metodologías Híbridas",
+              "descripcion": "Combinaciones de metodologías tradicionales y ágiles.",
+              "recursos": [
+                {
+                  "id": 13,
+                  "tipo": "video",
+                  "nombre": "Híbridos exitosos",
+                  "url": "https://example.com/hibridos_exitosos",
+                  "descripcion": "Video sobre la implementación de metodologías híbridas.",
+                  "tipos_aprendizaje": {
+                    "visual": 40,
+                    "auditivo": 30,
+                    "lectura_escritura": 20,
+                    "kinestesico": 10
+                  },
+                  "dificultad": 2
+                },
+                {
+                  "id": 14,
+                  "tipo": "documento",
+                  "nombre": "Guía para metodologías híbridas",
+                  "url": "https://example.com/guia_hibridos",
+                  "descripcion": "Documento detallado sobre la mezcla de metodologías tradicionales y ágiles.",
+                  "tipos_aprendizaje": {
+                    "visual": 30,
+                    "auditivo": 20,
+                    "lectura_escritura": 40,
+                    "kinestesico": 10
+                  },
+                  "dificultad": 3
+                },
+                {
+                  "id": 15,
+                  "tipo": "artículo",
+                  "nombre": "Estudios de caso híbridos",
+                  "url": "https://example.com/caso_hibridos",
+                  "descripcion": "Artículo que analiza proyectos que combinaron metodologías.",
+                  "tipos_aprendizaje": {
+                    "visual": 35,
+                    "auditivo": 25,
+                    "lectura_escritura": 30,
+                    "kinestesico": 10
+                  },
+                  "dificultad": 3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
