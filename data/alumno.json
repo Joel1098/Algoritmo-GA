@@ -1,0 +1,41 @@
+{
+  "alumno": {
+    "id": 1,
+    "nombre": "Alan Joel",
+    "tipos_aprendizaje": {
+      "visual": 40,
+      "auditivo": 30,
+      "lectura_escritura": 20,
+      "kinestesico": 10
+    },
+    "test_inicial": {
+      "temas": [
+        {
+          "id_tema": 1,
+          "nombre_tema": "Introducción a las metodologías de software",
+          "nivel": 2
+        },
+        {
+          "id_tema": 2,
+          "nombre_tema": "Metodología Cascada",
+          "nivel": 1
+        },
+        {
+          "id_tema": 3,
+          "nombre_tema": "Metodologías Ágiles",
+          "nivel": 3
+        },
+        {
+          "id_tema": 4,
+          "nombre_tema": "Metodología Espiral",
+          "nivel": 2
+        },
+        {
+          "id_tema": 5,
+          "nombre_tema": "Metodologías Híbridas",
+          "nivel": 1
+        }
+      ]
+    }
+  }
+}
