@@ -34,19 +34,32 @@ class AlgoritmoGenetico:
         self.sigma = sigma
         self.tam_torneo = tam_torneo
         self.generaciones_detencion_temprana = generaciones_detencion_temprana
+        
+    #Determinar el tamaño del cromosoma dinámicamente basado en los materiales
+        self.longitud_individuo = sum(len(tema['recursos']) for modulo in datos_materiales['unidad_aprendizaje']['modulos'] for tema in modulo['temas'])
+        print(f"Tamaño del cromosoma: {self.longitud_individuo}")  # ✅ Debug: Verifica la cantidad de genes
 
     def inicializar_poblacion(self) -> List[List[int]]:
-        return generar_poblacion(self.tamano_poblacion, self.longitud_individuo)
+        return generar_poblacion(self.tamano_poblacion, self.datos_materiales)
 
     def evolucionar(self, poblacion: List[List[int]]) -> List[List[int]]:
+        
         nueva_poblacion = []
         while len(nueva_poblacion) < self.tamano_poblacion:
             padre1 = self.funcion_seleccion(poblacion, lambda x: self.funcion_aptitud(x, self.datos_estudiante, self.datos_materiales, self.alpha, self.beta, self.sigma), self.tam_torneo)
             padre2 = self.funcion_seleccion(poblacion, lambda x: self.funcion_aptitud(x, self.datos_estudiante, self.datos_materiales, self.alpha, self.beta, self.sigma), self.tam_torneo)
+
+
             hijo1, hijo2 = self.funcion_cruza(padre1, padre2, self.tasa_de_cruza)
+
             hijo1 = self.funcion_mutacion(hijo1, self.tasa_mutacion)
             hijo2 = self.funcion_mutacion(hijo2, self.tasa_mutacion)
+
+            hijo1 = hijo1[:self.longitud_individuo]
+            hijo2 = hijo2[:self.longitud_individuo]
+
             nueva_poblacion.extend([hijo1, hijo2])
+
         return nueva_poblacion[:self.tamano_poblacion]
 
     def ejecutar(self, generaciones: int) -> Tuple[List[int], float, int]:

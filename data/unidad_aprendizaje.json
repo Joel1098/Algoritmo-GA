@@ -253,6 +253,167 @@
                   "dificultad": 3
                 }
               ]
+            },
+            {
+            "id": 6,
+            "nombre": "DevOps y Entrega Continua",
+            "descripcion": "Principios de integración y entrega continua en el desarrollo de software con enfoque DevOps.",
+            "recursos": [
+              {
+                "id": 16,
+                "tipo": "video",
+                "nombre": "Introducción a DevOps",
+                "url": "https://example.com/devops_intro",
+                "descripcion": "Video introductorio sobre la cultura DevOps y sus principios.",
+                "tipos_aprendizaje": {
+                  "visual": 50,
+                  "auditivo": 30,
+                  "lectura_escritura": 10,
+                  "kinestesico": 10
+                },
+                "dificultad": 1
+              },
+              {
+                "id": 17,
+                "tipo": "documento",
+                "nombre": "Guía de Integración Continua",
+                "url": "https://example.com/guia_integracion",
+                "descripcion": "Documento detallado sobre la implementación de integración continua.",
+                "tipos_aprendizaje": {
+                  "visual": 25,
+                  "auditivo": 15,
+                  "lectura_escritura": 50,
+                  "kinestesico": 10
+                },
+                "dificultad": 2
+              },
+              {
+                "id": 18,
+                "tipo": "artículo",
+                "nombre": "Casos de éxito en DevOps",
+                "url": "https://example.com/casos_devops",
+                "descripcion": "Artículo con ejemplos de empresas que han implementado con éxito DevOps.",
+                "tipos_aprendizaje": {
+                  "visual": 40,
+                  "auditivo": 20,
+                  "lectura_escritura": 30,
+                  "kinestesico": 10
+                },
+                "dificultad": 2
+              }
+            ]
+          }
+          ]
+        },
+        {
+          "id": 2,
+          "nombre": "Módulo 2: Diseño de Arquitecturas de Software",
+          "descripcion": "Principios y patrones arquitectónicos en el desarrollo de software.",
+          "temas": [
+            {
+              "id": 7,
+              "nombre": "Patrones de Diseño",
+              "descripcion": "Exploración de los patrones de diseño más utilizados en la ingeniería de software.",
+              "recursos": [
+                {
+                  "id": 19,
+                  "tipo": "video",
+                  "nombre": "Patrones de diseño en la práctica",
+                  "url": "https://example.com/patrones_diseno",
+                  "descripcion": "Video que muestra ejemplos reales de patrones de diseño.",
+                  "tipos_aprendizaje": {
+                    "visual": 60,
+                    "auditivo": 20,
+                    "lectura_escritura": 10,
+                    "kinestesico": 10
+                  },
+                  "dificultad": 2
+                },
+                {
+                  "id": 20,
+                  "tipo": "documento",
+                  "nombre": "Guía de patrones de diseño",
+                  "url": "https://example.com/guia_patrones",
+                  "descripcion": "Documento con una guía completa de patrones de diseño.",
+                  "tipos_aprendizaje": {
+                    "visual": 30,
+                    "auditivo": 10,
+                    "lectura_escritura": 50,
+                    "kinestesico": 10
+                  },
+                  "dificultad": 3
+                },
+                {
+                  "id": 21,
+                  "tipo": "artículo",
+                  "nombre": "Casos de estudio sobre patrones",
+                  "url": "https://example.com/casos_patrones",
+                  "descripcion": "Artículo con ejemplos de uso de patrones en la industria.",
+                  "tipos_aprendizaje": {
+                    "visual": 40,
+                    "auditivo": 15,
+                    "lectura_escritura": 35,
+                    "kinestesico": 10
+                  },
+                  "dificultad": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "nombre": "Módulo 3: Pruebas y Mantenimiento de Software",
+          "descripcion": "Metodologías y herramientas para pruebas y mantenimiento del software.",
+          "temas": [
+            {
+              "id": 8,
+              "nombre": "Pruebas Automatizadas",
+              "descripcion": "Técnicas y herramientas para la automatización de pruebas en software.",
+              "recursos": [
+                {
+                  "id": 22,
+                  "tipo": "video",
+                  "nombre": "Fundamentos de pruebas automatizadas",
+                  "url": "https://example.com/pruebas_automatizadas",
+                  "descripcion": "Video explicativo sobre la importancia de las pruebas automatizadas.",
+                  "tipos_aprendizaje": {
+                    "visual": 50,
+                    "auditivo": 30,
+                    "lectura_escritura": 10,
+                    "kinestesico": 10
+                  },
+                  "dificultad": 2
+                },
+                {
+                  "id": 23,
+                  "tipo": "documento",
+                  "nombre": "Guía de herramientas de testing",
+                  "url": "https://example.com/herramientas_testing",
+                  "descripcion": "Documento sobre herramientas para pruebas automatizadas.",
+                  "tipos_aprendizaje": {
+                    "visual": 25,
+                    "auditivo": 15,
+                    "lectura_escritura": 50,
+                    "kinestesico": 10
+                  },
+                  "dificultad": 2
+                },
+                {
+                  "id": 24,
+                  "tipo": "artículo",
+                  "nombre": "Pruebas en la industria",
+                  "url": "https://example.com/casos_testing",
+                  "descripcion": "Artículo sobre cómo empresas aplican pruebas automatizadas.",
+                  "tipos_aprendizaje": {
+                    "visual": 35,
+                    "auditivo": 25,
+                    "lectura_escritura": 30,
+                    "kinestesico": 10
+                  },
+                  "dificultad": 3
+                }
+              ]
             }
           ]
         }

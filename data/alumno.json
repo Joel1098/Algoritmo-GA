@@ -18,12 +18,12 @@
         {
           "id_tema": 2,
           "nombre_tema": "Metodología Cascada",
-          "nivel": 1
+          "nivel": 2
         },
         {
           "id_tema": 3,
           "nombre_tema": "Metodologías Ágiles",
-          "nivel": 3
+          "nivel": 2
         },
         {
           "id_tema": 4,
@@ -33,7 +33,22 @@
         {
           "id_tema": 5,
           "nombre_tema": "Metodologías Híbridas",
-          "nivel": 1
+          "nivel": 2
+        },
+        {
+          "id_tema": 6,
+          "nombre_tema": "DevOps y Entrega Continua",
+          "nivel": 2
+        },
+        {
+          "id_tema": 7,
+          "nombre_tema": "Patrones de Diseño",
+          "nivel": 2
+        },
+        {
+          "id_tema": 8,
+          "nombre_tema": "Pruebas Automatizadas",
+          "nivel": 3
         }
       ]
     }

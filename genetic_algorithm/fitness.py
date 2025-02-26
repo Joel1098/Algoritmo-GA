@@ -11,9 +11,8 @@ def funcion_aptitud(individuo: List[int], datos_estudiante: dict, datos_material
     puntaje_estilos = 0
     
     num_selected = sum(individuo)
-    
-    
     tema_index = 0
+    
     for modulo in datos_materiales['unidad_aprendizaje']['modulos']:
         for tema in modulo['temas']:
             nivel_estudiante = temas_estudiante.get(tema['id'], 0)
@@ -35,19 +34,21 @@ def funcion_aptitud(individuo: List[int], datos_estudiante: dict, datos_material
                     puntaje_estilos += estilos_coincidentes / estilos_preferidos if estilos_preferidos > 0 else 0
 
                 tema_index += 1
-
+    #print(f'Debug del puntaje de estilos: {puntaje_estilos:.2f}')
     # Normalización de S_evaluación
     if num_selected > 0:
-        puntaje_evaluacion /= num_selected  # Promedio de evaluación
-
+        puntaje_evaluacion /= num_selected # Promedio de evaluación
+        puntaje_estilos /= (num_selected ** 0.18)
+        
+    #print(f'Debug del puntaje de estilos despues del promedio: {puntaje_estilos:.2f}')
     # Penalización para evitar selección excesiva de materiales
     penalty = 0.1 * num_selected
-    max_resources = 10
+    max_resources = 24
     if num_selected > max_resources:
         penalty += 10  
 
     # Cálculo final de aptitud
     #Debug de funcion objetivo
-    # print(f"Evaluacion: {puntaje_evaluacion:.2f} y Estilo: {puntaje_estilos}") 
+    #print(f"Evaluacion: {puntaje_evaluacion:.2f} y Estilo: {puntaje_estilos}") 
     fitness_value = (alpha * puntaje_evaluacion + beta * puntaje_estilos - penalty)
     return max(0, fitness_value)

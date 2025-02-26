@@ -10,14 +10,14 @@ datos_materiales = load_data('./data/unidad_aprendizaje.json')
 
 # Calcular la longitud del cromosoma (número total de recursos)
 longitud_individuo = sum(len(tema['recursos']) for modulo in datos_materiales['unidad_aprendizaje']['modulos'] for tema in modulo['temas'])
-
+print(f'Longitud de individuo calculada: {longitud_individuo:.2f}')
 # Configuraciones ya estandarizadas del algoritmo genético
 tasa_mutacion = 0.01  # Tasa de mutación de 0.01
 tasa_de_cruza = 0.8  # Tasa de cruza de 0.8
-tamano_poblacion = 100
-longitud_individuo = 15  # Longitud del cromosoma (asignación de materiales)
+tamano_poblacion = 50
+
 generaciones = 100  # Número máximo de generaciones
-tam_torneo= 0.5
+tam_torneo= 5
 
 # Pesos de la función objetivo
 alpha = 0.6  # Peso para la evaluación
@@ -35,21 +35,27 @@ mejor_solucion, mejor_aptitud, generacion_detencion = algoritmo_genetico.ejecuta
 print(f"Mejor solución encontrada en la generación {generacion_detencion}: {mejor_solucion} con aptitud {mejor_aptitud:.2f}")
 
 # Asignación de materiales
-materiales = []
+asignacion = []
+
+tema_index = 0
 for modulo in datos_materiales['unidad_aprendizaje']['modulos']:
     for tema in modulo['temas']:
+        print(f"\nTema: {tema['nombre']}")  # para ver qué tema se está procesando
+        
+        materiales_tema = []
         for recurso in tema['recursos']:
-            materiales.append({
-                "titulo": recurso['nombre'],
-                "tipo": recurso['tipo'],
-                
-            })
-            
+            if tema_index < len(mejor_solucion) and mejor_solucion[tema_index] == 1:
+                materiales_tema.append({
+                    "titulo": recurso['nombre'],
+                    "tipo": recurso['tipo']
+                })
+            tema_index += 1
 
-asignacion = {material["titulo"]: valor for material, valor in zip(materiales, mejor_solucion)}
-print("Asignación de materiales:")
-for material, valor in asignacion.items():
-    if valor == 1:
-        tipo_material = next(item["tipo"] for item in materiales if item["titulo"] == material)
-        print(f"Material asignado: {material} (Tipo: {tipo_material})")
+        if materiales_tema:
+            print(f"Materiales asignados:")
+            for mat in materiales_tema:
+                print(f"    - {mat['titulo']} ({mat['tipo']})")
+            asignacion.append({tema["nombre"]: materiales_tema})
+        else:
+            print(f"Sin materiales asignados para este tema.")
    
